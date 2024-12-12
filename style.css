@@ -1,84 +1,86 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: white;
-    background-color: #1a1a1a;
-    line-height: 1.6;
+    background-color: #1a1a1a; /* Dark background for contrast */
+    line-height: 1.6; /* Increase line spacing for better readability */
 }
 a {
-    text-decoration: none;
-    color: white;
+    text-decoration: none; /* Remove default link underlines */
+    color: white; /* White text for links to stand out against dark background */
 }
+/* Header & Navigation */
 header {
-    background: black;
+    background: black; /* Distinguish the header from the rest of the page */
     padding: 10px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Space out logo and nav links */
     align-items: center;
 }
 .navbar .logo {
-    font-size: 24px;
+    font-size: 24px; /* Increase size for logo prominence */
     font-weight: bold;
-    font: lora;
+    font: lora; /* Custom font specification for the logo text */
 }
 .navbar ul {
-    list-style: none;
+    list-style: none; /* Remove default bullet points */
     display: flex;
-    gap: 20px;
+    gap: 20px; /* Spacing between navigation links */
 }
 .navbar ul li a:hover {
-    color: #f39c12;
+    color: #f39c12; /* Highlight links on hover for interactivity */
 }
-
+/* Hero Section */
 .hero {
-    text-align: center;
-    padding: 50px 20px;
+    text-align: center; /* Center hero text and image */
+    padding: 50px 20px; /* Ample space around hero content */
 }
 
 .hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: 2.5em;  /* Large, attention-grabbing headline */
+    margin-bottom: 20px; /* Space below headline */
 }
 
 .hero-image img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain image aspect ratio */
 }
-
+/* Portfolio Section */
 .portfolio {
-    padding: 40px 20px;
+    padding: 40px 20px; /* Spacing around portfolio items */
 }
 
 .portfolio h2 {
-    text-align: center;
+    text-align: center; /* Center the section heading */
     margin-bottom: 20px;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    display: grid; /* Use CSS Grid layout for portfolio items */
+    grid-template-columns: repeat(3, 1fr); /* 3-column responsive grid */
+    gap: 20px; /* Space between grid items */
 }
 .grid-item {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Stack image and description vertically */
+    align-items: center; /* Center contents horizontally */
     text-align: center;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 8px; /* Slightly rounded corners for visual appeal */
 }
 .grid-item img {
-    width: 100%;
-    height: 358px;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    width: 100%; /* Make images fully span their container */
+    height: 358px; /* Fixed height to keep a consistent layout */
+    object-fit: cover; /* Crop images to fit the given space nicely */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transitions */
 }
 
 .grid-item img:hover {
-    transform: scale(1.1); 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); 
+    transform: scale(1.1); /* Slight zoom on hover to highlight the image */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Add depth with a shadow on hover */
 }
 
 .grid-item p {
@@ -86,44 +88,47 @@ header {
     color: white;
     font-size: 1em;
     text-align: center;
-    line-height: 1.4;
+    line-height: 1.4; /* Improve text readability */
     padding: 5px;
-    border-radius: 5px;
-    max-width: 95%; 
+    border-radius: 5px; /* Rounded background if a background-color is added later */
+    max-width: 95%; /* Keep text neatly contained */
 }
+/* About Section */
 .about {
     text-align: center;
     padding: 20px;
-    font-size: 1.2em;
+    font-size: 1.2em; /* Slightly larger text for emphasis */
 }
+/* Contact Section */
 .contact {
-    background: black;
+    background: black; /* Same black as header for consistency */
     padding: 20px;
-    text-align: center;
+    text-align: center; /* Center the contact content */
 }
 .contact h2 {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Space below heading */
 }
 .contact .social-media input {
-    padding: 10px;
-    margin-right: 5px;
+    padding: 10px; /* Comfortable click/tap target */
+    margin-right: 5px; /* Space between input and button */
 }
 .contact .social-media button {
     padding: 10px 15px;
-    background-color: #f39c12;
-    color: black;
+    background-color: #f39c12; /* Stand-out button color */
+    color: black; /* High contrast against the button background */
     border: none;
-    cursor: pointer;
+    cursor: pointer; /* Indicates interactivity */
 }
 .contact .social-media .icons {
-    margin-top: 10px;
+    margin-top: 10px; /* Space above the icons */
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: center; /* Center the social icons */
+    gap: 10px; /* Space between individual icons */
 }
+/* Footer */
 footer {
-    background: black;
+    background: black; /* Match header for visual continuity */
     text-align: center;
     padding: 10px;
-    font-size: 0.9em;
+    font-size: 0.9em; /* Slightly smaller text for footer */
 }
