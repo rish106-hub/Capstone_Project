@@ -10,3 +10,4 @@ A description file has been added which has one line meanings of every element/t
 Figma link:- https://www.figma.com/design/5vqnhNRYFIxM43W9HtVDOo/095?t=rw9pIh9LAwtkQnxS-0 <br><br>
 This project will be hosted via netlify and the link will be attatched soon . <br><br>
 Hosted link:- https://capstonenst.netlify.app <br><br>
+Github Pages link:- https://rish106-hub.github.io/Capstone_Project/ <br><br>
