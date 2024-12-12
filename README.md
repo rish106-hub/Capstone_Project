@@ -8,3 +8,4 @@ By making the First Capstone project , I have gotten hands-on experience with th
 I have used my knowledge of HTML , CSS , Google search , structured , productive yet meaningful usage of available generative pre-trained transformer tools to build this project . <br><br>
 Figma link:- https://www.figma.com/design/5vqnhNRYFIxM43W9HtVDOo/095?t=rw9pIh9LAwtkQnxS-0 <br><br>
 This project will be hosted via netlify and the link will be attatched soon . <br><br>
+Hosted link:- https://capstonenst.netlify.app <br><br>
