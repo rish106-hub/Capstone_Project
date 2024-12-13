@@ -11,6 +11,7 @@ a {
     text-decoration: none; /* Remove default link underlines */
     color: white; /* White text for links to stand out against dark background */
 }
+
 /* Header & Navigation */
 header {
     background: black; /* Distinguish the header from the rest of the page */
@@ -19,26 +20,65 @@ header {
     justify-content: space-between; /* Space out logo and nav links */
     align-items: center;
 }
-.navbar .logo {
-    font-size: 24px; /* Increase size for logo prominence */
-    font-weight: bold;
-    font: lora; /* Custom font specification for the logo text */
-}
-.navbar ul {
-    list-style: none; /* Remove default bullet points */
+
+.navbar {
+    position: absolute; /* Position the navbar relative to the screen */
+    top: 0; /* Align the navbar to the top of the screen */
+    left: 0; /* Align the logo to the far left */
+    width: 100%; /* Make navbar span the entire width */
     display: flex;
-    gap: 20px; /* Spacing between navigation links */
+    justify-content: space-between; /* Space out logo and nav links */
+    align-items: center; /* Vertically align items */
+    padding: 10px 20px;
+    background-color: transparent; /* Make navbar background transparent */
 }
-.navbar ul li a:hover {
-    color: #f39c12; /* Highlight links on hover for interactivity */
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
 }
+
+nav {
+    margin-left: auto; /* Push navigation to the far right */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Align links horizontally */
+    gap: 20px; /* Add space between links */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Keep text white */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    color: #f39c12; /* Change color on hover */
+}
+
 /* Responsive Navbar */
 @media (max-width: 768px) {
-    .navbar ul {
+    .navbar {
+        flex-direction: column; /* Stack logo and nav links vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    nav ul {
         flex-direction: column; /* Stack links vertically on smaller screens */
         gap: 10px; /* Reduce spacing for compact view */
     }
+
+    .logo {
+        margin-bottom: 10px; /* Space between logo and nav links */
+    }
 }
+
 /* Hero Section */
 .hero {
     text-align: center; /* Center hero text and image */
@@ -52,6 +92,7 @@ header {
     max-width: 100%; /* Make the image responsive */
     height: auto; /* Maintain image aspect ratio */
 }
+
 /* Portfolio Section */
 .portfolio {
     padding: 40px 20px; /* Spacing around portfolio items */
@@ -95,6 +136,7 @@ header {
     border-radius: 5px; /* Rounded background if a background-color is added later */
     max-width: 95%; /* Keep text neatly contained */
 }
+
 /* Responsive Portfolio */
 @media (max-width: 1024px) {
     .grid-container {
@@ -112,6 +154,7 @@ header {
         height: auto; /* Allow image height to adjust dynamically */
     }
 }
+
 /* About Section */
 .about {
     text-align: center;
@@ -124,6 +167,7 @@ header {
         padding: 15px;
     }
 }
+
 /* Contact Section */
 .contact {
     background: black; /* Same black as header for consistency */
@@ -165,6 +209,7 @@ header {
         gap: 5px; /* Reduce spacing for compact layout */
     }
 }
+
 /* Footer */
 footer {
     background: black; /* Match header for visual continuity */
