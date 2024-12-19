@@ -111,6 +111,14 @@ body {
     display: flex;
     justify-content: flex-start;
 }
+#me{
+    display: flex;
+    justify-content: flex-start;
+}
+#collaborations{
+    display: flex;
+    justify-content: flex-end;
+}
 .subscribe {
     display: flex;
     justify-content: center;
