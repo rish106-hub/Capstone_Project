@@ -93,15 +93,24 @@ body {
 }
 
 .contact h3 {
-    font-size: 24px;
+    font-size: 32px;
     margin-bottom: 16px;
+    color: #E6D8D6;
 }
 
 .contact p {
     font-size: 16px;
     margin-bottom: 24px;
+    color: #E6D8D6;
 }
-
+#ct{
+    display: flex;
+    justify-content: flex-end;
+}
+#copyright{
+    display: flex;
+    justify-content: flex-start;
+}
 .subscribe {
     display: flex;
     justify-content: center;
@@ -112,7 +121,7 @@ body {
 
 .subscribe input {
     width: 300px;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #E6D8D6;
     border-radius: 4px;
     background-color: #2D2726;
@@ -120,13 +129,15 @@ body {
 }
 
 .subscribe button {
-    padding: 10px 20px;
-    background-color: #E6D8D6;
+    padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    background-color: #F59c5c;
+    background-color: #F59C5C;
+    color: #2D2726;
+    font-weight: bold;
 }
+
 
 .social-links {
     display: flex;
@@ -140,8 +151,10 @@ footer {
     text-align: center;
     padding: 16px 0;
     font-size: 14px;
-    border-top: 1.5px solid #000000;
+    color: #E6D8D6;
+    border-top: 1px solid #E6D8D6;
 }
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .header {
